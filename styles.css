@@ -1,0 +1,994 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
+    
+
+
+ body {
+     font-family: monospace;
+     font-size: 18px;
+     font-family: 'Roboto Condensed', sans-serif;
+     background-color: rgb(243, 243, 243);
+ }
+
+/*------------------------------INICIO HEADER------------------------------*/
+
+header {
+    background-color: #021e4d;
+}
+
+.contenedor_header{
+    max-width: 1400px;
+    margin: auto;
+    height: 80px;
+}
+
+#letraslogo {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    height: 33px;
+    margin: 0;
+    padding: 18px 20px;
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#iniciosesion {
+    text-decoration: none;
+    color: rgb(3, 137, 255);
+}
+
+.contenedor_iniciar_sesion {
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+#iniciosesion:hover {
+    color: white;
+    text-decoration: underline white;
+    transition: 0.3s ease-out all;  
+}
+
+@media only screen and (max-width:600px){
+    .contenedor_header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    }
+
+    .logo{
+    margin-bottom: 12px;
+    }
+}
+
+
+/*Comienzo página Inicio de sesión*/
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    background: #021e4d;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px #010918;
+    border-radius: 10px;
+}
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+  
+  .login-box .user-box {
+    position: relative;
+}
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20   px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #5a94f8;
+    font-size: 12px;
+}
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    margin-left: 85px;
+    border: 2px solid white;
+}
+  
+  .login-box a:hover {
+    background: #3d82f8;
+    color: black;
+    border-radius: 5px;
+}
+/*Final Inicio de sesión*/
+/*------------------------------CIERRE HEADER------------------------------*/
+
+/*------------------------------INICIO BARRA DE NAVEGACIÓN------------------------------*/
+.contenedor_nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 30px;
+    font-size: 25px;
+    background-color: rgb(243, 243, 243);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(243, 243, 243);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.2s ease-out all;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li {
+    border-right: 1.3px solid #021e4d;
+}
+
+li a:hover {
+    background-color: #021e4de6;
+    color: white;
+}
+
+@media only screen and (max-width:600px){
+    .contenedor_nav {
+        font-size: 25px;
+    }
+    li {
+    float: initial;
+    }
+    li {
+        border-bottom: 1.3px solid #021e4d;
+    }
+    li {
+        border-right: 1.3px solid rgb(243, 243, 243);
+    }
+}
+/*------------------------------CIERRE BARRA DE NAVEGACIÓN------------------------------*/
+
+/*------------------------------PESTAÑA INICIO------------------------------*/
+/* Inicio primera sección*/
+
+#fachada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 110vh;
+    color: white;
+    background-image: url(./imgs/fachadau.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px black;
+}
+
+#inicio{
+    font-size: 100px;
+}
+
+/* Inicio botton */
+
+button {
+    color: white;
+    height: 70px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #021e4de0;
+    border: 1px solid white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+button:hover{
+    border: 1px solid #032663 ;
+    color: #032663;
+    background-color: rgba(255, 255, 255, 0.688);
+    transition: .2s ease-in all;
+    box-shadow: 1px 1px 5px #032663;
+}
+/* Fin botton */
+
+/* Fin primera sección*/ 
+
+/* Inicio segunda sección*/
+
+#dft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 110vh;
+    color: white;
+    background-image: url(./imgs/libreria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px black;
+}
+
+/* Fin segunda sección*/
+
+/* Separador de imágenes*/
+.separador {
+    height: 25px;
+}
+/*-----------------------------*/
+
+/* Inicio tercera sección*/
+
+#carreras { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 110vh;
+    color: white;
+    background-image: url(./imgs/carreras.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px black;  
+}
+
+/* Fin tercera sección*/
+
+/* Inicio cuarta sección*/
+
+#nosotros { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 110vh;
+    color: white;
+    background-image: url(./imgs/conocenos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px black;  
+}
+/* Fin cuarta sección*/
+@media only screen and (max-width:600px){
+    #inicio{
+        font-size: 80px;
+    }
+}
+
+/*------------------------------CIERRE PESTAÑA INICIO------------------------------*/
+    
+/*------------------------------INICIO PESTAÑA CAMPUS------------------------------*/
+.container_titulo {
+    margin-top: 10px;
+    margin-bottom:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #021e4d;
+}
+
+#titulossections {
+    font-size: 70px;
+}
+
+.container_imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1{
+    height: 480px;
+    width: 1000px;
+    margin:5px;
+    background-image: url(imgs/castillo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.card2{
+    height: 480px;
+    width: 1000px;
+    margin:5px;
+    background-image: url(imgs/castillo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card3{
+    height: 480px;
+    width: 1000px;
+    margin:5px;
+    background-image: url(imgs/castillo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card1:hover {
+    height: 490px;
+    width: 1000px;
+    border-radius: 4px;
+    transition: 0.4s ease-in-out all;
+    box-shadow: 1px 1px 20px;
+}
+.card2:hover {
+    height: 490px;
+    width: 1000px;
+    border-radius: 4px;
+    transition: 0.4s ease-in-out all;
+    box-shadow: 1px 1px 20px;
+}
+.card3:hover {
+    height: 490px;
+    width: 1000px;
+    border-radius: 4px;
+    transition: 0.4s ease-in-out all;
+    box-shadow: 1px 1px 20px;;
+}
+/*------------------------------CIERRE PESTAÑA CAMPUS------------------------------*/
+
+/*------------------------------INICIO PESTAÑA DFT------------------------------*/
+
+#h1carreras{
+    font-size: 65px;
+}
+
+.container_dft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.container_dft h1{
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+#bienvenidadft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 85vh;
+    color: white;
+    background-image: url(./imgs/bienvenidadft.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px black;
+}
+#bienvenidadft h1{
+    font-size: 130px;
+}
+
+#informatica{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    background-image: url(./imgs/bannercomputacioninformatica.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px black;
+}
+
+#enfermeria { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    background-image: url(./imgs/bannerenfermeria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px black;
+}
+
+#quimico { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    background-image: url(./imgs/bannerquimico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px black;
+}
+
+/*----------------------------INICIO PESTAÑA DETALLES CARRERAS----------------------------*/
+
+#computacion { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    background-image: url(./imgs/informatica.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px black;
+}
+
+#idft {
+    margin: 15px;
+    font-size: 20px;
+}
+
+.container_parrafo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    text-align: justify;
+    max-width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.container_galeria{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_malla{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_galeria img {
+    margin: 50px;
+    height: 300x;
+    width: 300px;
+}
+
+@media only screen and (max-width:600px){
+#computacion h1{
+    font-size: 50px;
+}
+#quimico button{
+    margin-bottom: 100px;
+}
+#bienvenidadft h1{
+    font-size: 90px;
+}
+#idft {
+    font-size: 19px;
+}
+ .container_galeria img{
+    margin: 10px;
+    width: 22vh;
+}
+ .container_parrafo p {
+    font-size: 0.2rem;
+}
+.container_malla{
+    height: 280px;
+    width: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-left: 200px;
+}
+} 
+
+/*----------------------------INICIO TABLA ESPECIFICACIONES----------------------------*/
+
+.container_tabs{
+    min-height: 80vh;
+    padding-top: 10vh;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    line-height: 1.5;
+    max-width: 1000px;
+    font-size: 112%;
+    margin-left: 220px;
+}
+
+.tabs {
+	display: flex;
+	flex-wrap: wrap; 
+}
+
+.tabs label {
+    color: white;
+    order: 1; 
+    display: block;
+    padding: 1rem 2rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    background-color: #021e4d;
+    font-weight: bold;
+    transition: background ease 0.2s;
+}
+
+.tabs label:hover{
+    background-color: #021e4da7;
+    color: black;
+}
+
+.tabs .tab {
+    order: 99; 
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    background-color: rgb(243, 243, 243);  
+}
+
+.tabs .tab:hover {
+    color: black;
+    transition: 0.3s ease all;
+    
+}
+
+.tabs input[type="radio"] {
+	display: none;
+}
+
+.tabs input[type="radio"]:checked + label {
+    background-color: #021e4da7;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+@media (max-width: 45em) {
+    .container_tabs{
+    margin-bottom: 120px;
+    margin-left: 0px;
+    }
+    .container_malla{
+        margin-left: 0px;
+    }
+    .container_malla img{
+        height: 600px;
+        width: 450px;
+        margin-right: 50px;
+    }
+
+
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+/*----------------------------CIERRE TABLA ESPECIFICACIONES----------------------------*/
+ 
+/*----------------------------CIERRE PESTAÑA DETALLES CARRERAS----------------------------*/
+
+/*------------------------------CIERRE PESTAÑA DFT------------------------------*/
+
+/*------------------------------INICIO PESTAÑA PREGRADO------------------------------*/
+#bienvenidapregrado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 85vh;
+    color: white;
+    background-image: url(./imgs/bienvenidapregrado.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px black;
+}
+
+#bienvenidapregrado h1{
+    font-size: 130px;
+}
+
+#kinesiologia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    background-image: url(./imgs/kinesiologia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px black;
+}
+
+#odontologia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    background-image: url(./imgs/odontologia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px black;
+}
+
+#arquitectura{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    background-image: url(./imgs/arquitectura.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 5px 5px 10px black;
+}
+
+
+
+
+@media only screen and (max-width:600px){
+    #bienvenidapregrado h1{
+        font-size: 90px;
+    }
+    
+}
+/*------------------------------CIERRE PESTAÑA PREGRADO------------------------------*/
+
+/*-------------------------INICIO PESTAÑA NUESTRA INSTITUCIÓN-------------------------*/
+
+.container_frase_nosotros{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.container_frase_nosotros h1{
+    stroke-width: 0em;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:600px){
+    .container_frase_nosotros h1{
+        margin-bottom: 120px;
+    }
+    .container_frase_nosotros{
+        display: block;
+
+    }
+}
+
+
+
+/*-------------------------CIERRE PESTAÑA NUESTRA INSTITUCIÓN-------------------------*/
+
+
+
+
+/*-------------------------INICIO PESTAÑA CONTACTANOS FORMULARIO-------------------------*/
+.container {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+#contact {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #021e4d;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display: block;
+	font-size:14px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+    resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#032663;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#1764e9;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+@media only screen and (max-width:600px){
+    .container {
+        margin-bottom: 200px;
+    }
+}
+/*-------------------------CIERRE PESTAÑA CONTACTANOS FORMULARIO-------------------------*/
+
+/*------------------------------INICIO FOOTER------------------------------*/
+.container_footer{
+    background-color: #021e4d;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+}
+.container_izquierda{
+    background-color: #021e4d;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container_icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_icons img {
+    margin: 5px;
+    height: 45px;
+    width: 45px;
+}
+
+.container_centro{
+    background-color: #021e4d;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_derecha{
+    background-color: #021e4d;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#pcontactanos {
+    font-size: 21px;
+}
+
+#textfooter {
+    margin-top: 10px;
+    border-radius: 7px;
+    outline: none;
+}
+
+#btnfooter {
+    margin-top: 15px;
+    color: white;
+    height: 30px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: #021e4de0;
+    border: 1px solid white;
+    font-size: 15px;
+}
+#btnfooter:hover {
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid blac;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px #ffffff;
+    transition: .3s ease all;
+}
+
+#contactanos {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+@media only screen and (max-width:600px){
+    .container_footer{
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .container_izquierda{
+        padding: 20px;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white ;
+    
+    }
+    .container_icons{
+        font-size: 20px;
+    }
+    .container_centro{
+        padding: 20px;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white ;
+    }
+    .container_derecha{
+        padding: 20px;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white ;
+    }
+}
+
+/*------------------------------CIERRE FOOTER------------------------------*/
+
